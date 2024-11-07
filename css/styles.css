@@ -1,16 +1,59 @@
+/* Estilos básicos para el juego */
+
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
-.boton-jugada {
-  background-color: #3498db;
-  color: #fff;
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
 #resultados {
-  font-size: 20px;
-  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+#contador-usuario, #contador-ordenador {
+  font-size: 16px;
+  margin-top: 10px;
 }
